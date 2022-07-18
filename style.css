@@ -1,0 +1,223 @@
+/* COLOR CODES */
+
+/* 
+Primary: #053245
+Secondary: #C2E854
+Primary Light: #6E8299
+Primary Dark: #205065
+*/
+
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Noto Sans", sans-serif;
+}
+
+/* ID'S */
+#showcase {
+  background: url("images/image1.jpg") no-repeat fixed center border-box;
+  height: 90vh;
+  width: 100%;
+  border-radius: 0 0 30px 30px;
+  color: #053245;
+  object-fit: cover;
+  position: relative;
+}
+#showcase-box {
+  margin-top: 5rem;
+}
+#showcase-box > h1 {
+  font-size: 3.5rem;
+  font-weight: 600;
+  max-width: 42%;
+}
+#showcase-box > p {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #205065;
+  margin-top: 1rem;
+}
+#nav-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0 0 0;
+}
+#nav-links {
+  list-style-type: none;
+  display: flex;
+}
+#nav-links > li {
+  padding-right: 1.4rem;
+  text-transform: capitalize;
+  font-weight: 600;
+  transition: all 0.2s ease-out;
+}
+#nav-links > li:hover {
+  color: #205065;
+  cursor: pointer;
+}
+#showcase-card-box {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 2rem;
+}
+#showcase-card-box > .showcase-card {
+  margin-right: 1.5rem;
+}
+#scroll-cta {
+  background: linear-gradient(
+    to right,
+    rgba(255, 255, 255, 0.418),
+    rgba(255, 255, 255, 0)
+  );
+  -webkit-backdrop-filter: blur(5px);
+  backdrop-filter: blur(5px);
+  color: #fff;
+  display: flex;
+  border-radius: 50px;
+  padding: 0.5rem;
+  width: 180px;
+  font-size: 1.2rem;
+  backdrop-filter: 8px;
+  position: absolute;
+  bottom: 100px;
+  left: 50%;
+  transform: rotate(-90deg);
+}
+#scroll-cta p:nth-of-type(1) {
+  margin: 0.2rem 1rem 0;
+  font-weight: 900;
+}
+#scroll-cta > p {
+  animation: bounce 1s infinite ease-in-out alternate;
+}
+#partnership {
+  text-align: center;
+  margin: 5rem 0;
+}
+#partnership > h1 {
+  color: #053245;
+  font-size: 2.5rem;
+  font-weight: 800;
+  margin: 1rem 0;
+}
+#partnership > p {
+  color: #6e8299;
+  font-size: 1.2rem;
+}
+
+/* CLASSES */
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.material-symbols-rounded {
+  font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 48;
+}
+
+.icons {
+  font-size: 2rem;
+}
+
+.btn {
+  border: none;
+  font-size: 0.75rem;
+  padding: 0.6rem 1rem;
+  border-radius: 7px;
+  font-weight: 900;
+  text-transform: capitalize;
+  cursor: pointer;
+}
+.btn-white {
+  background: #fff;
+  color: #053245;
+  transition: all 0.2s ease-in;
+}
+.btn-white:hover {
+  transform: scale(110%);
+}
+.btn-white:active {
+  transform: scale(130%);
+}
+.btn-primary {
+  background: #053245;
+  color: #fff;
+  transition: all 0.2s ease-in;
+}
+.btn-secondary {
+  background: #c2e854;
+  color: #053245;
+  transition: all 0.2s ease-in;
+}
+
+.showcase-card {
+  background: white;
+  padding: 1.4rem 1.2rem;
+  max-width: fit-content;
+  border-radius: 20px;
+  text-align: center;
+}
+.showcase-card p:nth-of-type(2) {
+  font-size: 1.6rem;
+  font-weight: 600;
+  margin: 0.5rem 0;
+}
+.showcase-card p:nth-of-type(3) {
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: #6e8299;
+}
+.showcase-card > .btn-secondary {
+  width: 100%;
+  margin: 1.5rem 0 0.3rem 0;
+  box-shadow: 1px 5px 10px #c3e85444;
+}
+.showcase-card > .btn-primary {
+  width: 100%;
+  margin: 1.5rem 0 0.3rem 0;
+  box-shadow: 1px 5px 10px #05324528;
+}
+
+/* KEYFRAMES */
+@keyframes bounce {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(20px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+/* MEDIA QUERIES */
+
+@media screen and (max-width: 900px) {
+  #showcase-box > h1 {
+    font-size: 2rem;
+    max-width: 100%;
+  }
+  #nav-links {
+    display: none;
+  }
+  #scroll-cta {
+    bottom: 100px;
+    left: 35%;
+  }
+}
+@media screen and (max-width: 1100px) {
+  #showcase-box > h1 {
+    font-size: 3rem;
+    max-width: 100%;
+  }
+  #scroll-cta {
+    bottom: 100px;
+    left: 45%;
+  }
+}
