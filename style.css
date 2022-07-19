@@ -15,6 +15,9 @@ Primary Dark: #205065
   box-sizing: border-box;
   font-family: "Noto Sans", sans-serif;
 }
+html {
+  scroll-behavior: smooth;
+}
 
 /* ID'S */
 #showcase {
@@ -97,7 +100,7 @@ Primary Dark: #205065
 }
 #partnership {
   text-align: center;
-  margin: 5rem 0;
+  margin: 10rem 0;
 }
 #partnership > h1 {
   color: #053245;
@@ -108,6 +111,197 @@ Primary Dark: #205065
 #partnership > p {
   color: #6e8299;
   font-size: 1.2rem;
+}
+#partnership > #parters {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 80%;
+  margin: 4rem auto;
+}
+#about {
+  background-color: #faf0e6;
+  padding: 2rem 0;
+}
+#about h1 {
+  color: #053245;
+  font-size: 2.5rem;
+  font-weight: 800;
+  margin: 1.5rem 0;
+  text-align: center;
+}
+#about p {
+  color: #6e8299;
+  font-size: 0.9rem;
+  text-align: center;
+}
+#about #about-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin: 2rem auto;
+}
+#about #about-cards .about-card {
+  margin-right: 20px;
+  margin-top: 1.5rem;
+}
+#launcher {
+  background-color: #ffffff;
+  padding: 2rem 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 5rem;
+}
+#launcher figure > img {
+  border-radius: 15px;
+  width: 30rem;
+  height: 30rem;
+  object-fit: cover;
+}
+#launcher h3 {
+  color: #053245;
+  font-size: 2.6rem;
+  font-weight: 600;
+  margin: 1.5rem 0;
+  /* max-width: 45%; */
+}
+#launcher p {
+  color: #6e8299;
+  font-size: 1.2rem;
+}
+#launcher #launch-pad {
+  max-width: 33%;
+}
+#launcher #launch-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 1px 15px 20px #0532453b;
+  margin: 2rem 0;
+  background: #053245;
+  border-radius: 20px;
+  padding: 1.5rem 2rem;
+}
+#launcher #launch-card h4 {
+  color: #fff;
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+#launcher #launch-card p {
+  color: #6e8299;
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+#launcher #launch-card button {
+  background-color: #c2e854;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 15px;
+  padding: 1.4rem 1.3rem 1rem;
+}
+#launcher #launch-card button span {
+  transform: rotate(180deg);
+}
+#subscription {
+  background: url("images/image4.jpg") no-repeat fixed center border-box;
+  height: 50vh;
+  width: 100%;
+  color: #053245;
+  object-fit: contain;
+  position: relative;
+  padding: 10rem 0;
+  display: flex;
+  align-items: center;
+  margin-top: 5rem;
+}
+#subscription h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin: 1rem 0;
+}
+#subscription p {
+  font-size: 1rem;
+  font-weight: 700;
+}
+#subscription #subscription-box {
+  background-color: #fff;
+  max-width: 40%;
+  padding: 1rem;
+  border-radius: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 2rem;
+}
+#subscription #subscription-box > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#subscription #subscription-box span {
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin-top: 8px;
+}
+#subscription #subscription-box input {
+  width: 100%;
+  padding: 0.5rem;
+  font-size: 1rem;
+  font-weight: 500;
+  outline: none;
+  border: none;
+  color: #053245;
+}
+#subscription #subscription-box input::placeholder {
+  color: #053245;
+}
+#subscription #subscription-box button {
+  padding: 0.8rem 2rem;
+}
+#footer {
+  background-color: #053245;
+  padding: 7rem 0 3rem;
+}
+#footer #footer-menu {
+  display: flex;
+  justify-content: space-between;
+}
+#footer-menu h3 {
+  color: #fff;
+  font-size: 1.8rem;
+  font-weight: 500;
+}
+#footer-menu select {
+  width: 100%;
+  padding: 1rem 7rem 1rem 1rem;
+  border-radius: 10px;
+  font-size: 0.8rem;
+  outline: none;
+  border: none;
+  color: #fff;
+  background-color: #205065;
+  margin-top: 1.5rem;
+}
+#footer #bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #7299aa;
+  margin-top: 5rem;
+  font-size: 1rem;
+}
+#footer #bottom div {
+  display: flex;
+  align-items: center;
+}
+#footer #bottom div p {
+  margin-right: 7rem;
+}
+#footer #bottom div p:last-child {
+  margin-right: 1rem;
 }
 
 /* CLASSES */
@@ -181,6 +375,100 @@ Primary Dark: #205065
   width: 100%;
   margin: 1.5rem 0 0.3rem 0;
   box-shadow: 1px 5px 10px #05324528;
+}
+.partner-image {
+  width: 100px;
+}
+.about-card {
+  background: #fff;
+  padding: 3rem 1.8rem;
+  max-width: 250px;
+  border-radius: 20px;
+  text-align: center;
+}
+.about-card img {
+  width: 50px;
+}
+.about-card h3 {
+  margin: 1.5rem 0;
+  color: #053245;
+  font-weight: 600;
+}
+.about-card p {
+  color: #6e8299;
+}
+.sub-menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.sub-menu > div {
+  margin-right: 12rem;
+}
+.sub-menu > div:last-child {
+  margin-right: 1rem;
+}
+.sub-menu .sub-menu-title {
+  color: #fff;
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+.sub-menu .sub-menu-links {
+  list-style-type: none;
+  color: #7299aa;
+}
+.sub-menu .sub-menu-links > li {
+  font-size: 1rem;
+  margin-top: 1rem;
+}
+.articles {
+  background-color: #f8f8f6;
+  color: #053245;
+  padding: 8rem 0;
+}
+.article {
+  margin-bottom: 10rem;
+}
+.article:last-child {
+  margin-bottom: 0;
+}
+.article-reverse {
+  flex-direction: row-reverse;
+}
+.article > .container > div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 2rem;
+}
+.article figure img {
+  width: 50rem;
+}
+.article > .container > div .article-card h3 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin: 2rem 0;
+}
+.article > .container > div .article-card p {
+  color: #6e8299;
+  font-size: 1.2rem;
+}
+.article > .container > div .article-card button {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 400;
+  font-size: 0.9rem;
+}
+.article > .container > div .article-card button span:last-child {
+  color: #c2e854;
+  transform: rotate(180deg);
+  margin-top: 2px;
+  margin-left: 20px;
+}
+.article .article-card {
+  max-width: 40%;
 }
 
 /* KEYFRAMES */
